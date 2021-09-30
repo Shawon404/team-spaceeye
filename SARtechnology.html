@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+           .menu{
+ background-color:#808B96;
+ display: flex;
+ justify-content: flex-end;
+    }
+    
+    .menu a{
+        text-decoration: none;
+        padding: 20px;
+        color:white;
+    }
+    .menu a : hover{
+        background-color:red ;
+    }
+#section1{
+    float: left;
+    width:50%;
+}
+img{
+      width:95%;
+      height: 80%;
+      padding:5px;
+      border: 3px solid black;
+    }
+#section2{
+    float: right;
+    width:50%;
+}
+#section2 p{
+    font-family: 'Gemunu Libre', sans-serif;
+}
+hr{
+    border: solid black 3px;
+    width:100%;
+    margin:20px auto;
+    border-bottom: none;
+}
+#section3{
+    float: left;
+    width:50%;
+}
+#section4{
+    float: right;
+    width:50%;
+}
+#section5{
+    float: left;
+    width:50%;
+}
+#section6{
+    float: right;
+    width:50%;
+}
+.div-clear{
+      clear: both;
+    }
+    .bottom{
+      background-color: black;
+      text-align: center;
+      padding: 10px;
+    }
+.bottom a{
+  color:white;
+  text-decoration: none;
+  margin: 10px;
+}
+.bottom p{
+  color:white;
+  margin-top: 20px;
+}
+.para{
+    text-align: justify;
+    text-size-adjust: 4px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="nasa.html" target="blank">Home </a>
+        <a href="SARtechnology.html"> SAR Technology</a>
+        <a href="applications.html"> Application </a>
+        <a href="knowmore.html"> Know More</a>
+        <a href="feedback.html">Feedback </a>
+         </div>
+         <br/>
+
+         <div id="section1">
+<img src="sar3.jpg"/>
+         </div>
+         <div id="section2">
+  <h2> What's Synthetic about SAR?</h2>
+  <p>The spatial resolution of radar data is directly related to the ratio of the sensor wavelength to the length of the sensor's antenna. For a given wavelength, the longer the antenna, the higher the spatial resolution. From a satellite in space operating at a wavelength of about 5 cm (C-band radar), in order to get a spatial resolution of 10 m, you would need a radar antenna about 4,250 m long. (That's over 47 football fields!)</p>
+<br/>
+<P>An antenna of that size is not practical for a satellite sensor in space. Hence, scientists and engineers have come up with a clever workaround — the synthetic aperture. In this concept, a sequence of acquisitions from a shorter antenna are combined to simulate a much larger antenna, thus providing higher resolution data (view geometry figure to the right).</P>
+
+         </div>
+         <hr>
+
+         <div id="section3">
+<img src="image.png"/>
+
+         </div>
+         <div id="section4">
+             <h2>The role of frequency and wavelength</h2>
+             <br/>
+             <p>Optical sensors such as Landsat's Operational Land Imager (OLI) and Sentinel-2's Multispectral Instrument (MSI) collect data in the visible, near-infrared, and short-wave infrared portions of the electromagnetic spectrum. Radar sensors utilize longer wavelengths at the centimeter to meter scale, which gives it special properties, such as the ability to see through clouds (view electromagnetic spectrum to the right). The different wavelengths of SAR are often referred to as bands, with letter designations such as X, C, L, and P. The table below notes the band with associated frequency, wavelength, and the application typical for that band.</p>
+<p>Wavelength is an important feature to consider when working with SAR, as it determines how the radar signal interacts with the surface and how far a signal can penetrate into a medium. For example, an X-band radar, which operates at a wavelength of about 3 cm, has very little capability to penetrate into broadleaf forest, and thus mostly interacts with leaves at the top of the tree canopy. An L-band signal, on the other hand, has a wavelength of about 23 cm, achieving greater penetration into a forest and allowing for more interaction between the radar signal and large branches and tree trunks. Wavelength doesn't just impact the penetration depth into forests, but also into other land cover types such as soil and ice.</p>
+
+         </div>
+         <hr>
+         
+         <div id="section5">
+            <img src="image2.png"/>
+
+            <img src="image3.png"/>
+                     </div>
+
+
+         <div id="section6">
+             <h2>Polarization and Scattering Mechanisms</h2>
+             <br>
+             <p>Radar can also collect signals in different polarizations, by controlling the analyzed polarization in both the transmit and receive paths. Polarization refers to the orientation of the plane in which the transmitted electromagnetic wave oscillates. While the orientation can occur at any angle, SAR sensors typically transmit linearly polarized. The horizontal polarization is indicated by the letter H, and the vertical polarization is indicated by V.</p>
+         <br>
+ <p>The advantage of radar sensors is that signal polarization can be precisely controlled on both transmit and receive. Signals emitted in vertical (V) and received in horizontal (H) polarization would be indicated by a VH. Alternatively, a signal that was emitted in horizontal (H) and received in horizontal (H) would be indicated by HH, and so on. Examining the signal strength from these different polarizations carries information about the structure of the imaged surface, based on the following types of scattering: rough surface, volume, and double bounce (view figure below).</p>
+  <ul>
+      <li>Rough surface scattering, such as that caused by bare soil or water, is most sensitive to VV <br>
+       <li>Volume scattering, for example, caused by the leaves and branches in a forest canopy, is most sensitive to cross-polarized data like VH or HV <br>
+
+
+           <li>  The last type of scattering, double bounce, is caused by buildings, tree trunks, or inundated vegetation and is most sensitive to an HH polarized signal.
+
+  </ul>  
+  <p>It is important to note that the amount of signal attributed to different scattering types may change as a function of wavelength, as wavelength changes the penetration depth of the signal. For example, a C-band signal penetrates only into the top layers of the canopy of a forest, and therefore will experience mostly roughness scattering mixed with a limited amount of volume scattering. However a L-band or P-band signal will have much deeper penetration and therefore experience strongly enhanced volume scattering as well as increasing amounts of double-bounce scattering caused by the tree trunk (view canopy penetration figure below).</p>   
+
+
+</div>
+<hr>
+
+<h2>Data Processing and Analysis</h2>
+<p class="para">One of the limitations of working with SAR data has been the somewhat tedious preprocessing steps that lower-level SAR data requires. Depending on the type of analysis you want to do, these preprocessing steps can include: applying the orbit file, radiometric calibration, de-bursting, multi looking, speckle filtering, and terrain correction. These steps are described in more detail in this<a href="https://www.google.com/url?q=https%3A%2F%2Fearthdata.nasa.gov%2Ffiles%2Fpre-processing_onepager_ROUGH.pdf&sa=D&sntz=1&usg=AFQjCNENDLswa9QAnqdggyzIPpp0CnI7DQ" target="blank"> SAR Pre-Processing one-pager.</a>   </p>
+<br><br><br><br>
+Source - https://earthdata.nasa.gov/learn/backgrounders/what-is-sar
+
+
+
+
+         
+         <div class="div-clear"></div>
+         <footer class="bottom">
+           <a href="https://m.facebook.com/spaceeye2021"> Facebook</a>
+           <a href="https://www.youtube.com/channel/UCfa3Mmwrq3j-cfwSwwRez_g">Youtube</a>
+           <p>&copy;Team Spaceeye2021</p>
+         </footer>
+         
+</body>
+</html>

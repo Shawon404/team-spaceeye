@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style> 
+    .container{
+      background-color:teal;
+    }
+    .menu{
+ background-color:#808B96;
+ display: flex;
+ justify-content: flex-end;
+    }
+    
+    .menu a{
+        text-decoration: none;
+        padding: 20px;
+        color:white;
+    }
+    .menu a : hover{
+        background-color:red ;
+    }
+    #section1{
+   float:left;
+ width:50%;
+    }
+
+    #section2{
+float: right;
+width:50%;
+text-align: justify;
+text: size 2px;
+
+font-family: 'Source Sans Pro', sans-serif;
+
+
+
+    }
+    img{
+      width:95%;
+      height: 80%;
+      padding:5px;
+      border: 3px solid black;
+    }
+    .div-clear{
+      clear: both;
+    }
+    .bottom{
+      background-color: black;
+      text-align: center;
+      padding: 10 px;
+    }
+.bottom a{
+  color:white;
+  text-decoration: none;
+  margin: 10px;
+}
+.bottom p{
+  color:white;
+  margin-top: 20px;
+}
+
+    @media screen and (max-width:600px) {
+
+    .menu{
+        flex-direction: column;
+    
+      }
+
+      .menu a{
+          background-color: indigo;
+          margin: 10px 0;
+          text-align: center;
+          border-radius: 10px;
+      }
+    }
+    </style>
+
+
+
+
+</head>
+
+  <div class="menu">
+ <a href="nasa.html">Home </a>
+ <a href="SARtechnology.html" target="blank"> SAR Technology</a>
+ <a href="applications.html"> Application </a>
+ <a href="knowmore.html"> Know More</a>
+ <a href="#">Feedback </a>
+  </div>
+  <br/>
+  <div class="container">
+  
+  <div id="section1">
+  <img src="sar1.jpg">
+  </div>
+
+  <div id="section2">
+    SAR is a type of active data collection where a sensor produces its own energy and then records the amount of that energy reflected back after interacting with the Earth. While optical imagery is similar to interpreting a photograph, SAR data require a different way of thinking in that the signal is instead responsive to surface characteristics like structure and moisture.
+
+  </div>
+  </div>
+
+  
+  <div class="div-clear"></div>
+  <footer class="bottom">
+    <a href="https://m.facebook.com/spaceeye2021"> Facebook</a>
+    <a href="https://www.youtube.com/channel/UCfa3Mmwrq3j-cfwSwwRez_g">Youtube</a>
+    <p>&copy;Team Spaceeye2021</p>
+  </footer>
+
+
+</body>
+</html>
